@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Silly Story generator</title>
+    <title>Silly story generator</title>
     <style>
       body {
-        font-family: Helvetica, sans-serif;
+        font-family: helvetica, sans-serif;
         width: 350px;
       }
 
@@ -30,23 +30,21 @@
         visibility: hidden;
       }
     </style>
-    <style type="text/css" id="operaUserStyle"></style>
   </head>
   <body>
     <div>
       <label for="customname">Enter custom name:</label>
-      <label id="customname" type="text" placeholder></label>
+      <input id="customname" type="text" placeholder="" />
     </div>
     <div>
-      <label for="us">US</label>
-      <input id="us" type="radio" name="ukus" value="us" checked />
-      <label for="uk">UK</label>
-      <input id="uk" type="radio" name="ukus" value="uk" />
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
     </div>
     <div>
       <button class="randomize">Generate random story</button>
     </div>
     <p class="story"></p>
-    <script src="main.js"></script>
   </body>
 </html>
