@@ -10,8 +10,17 @@ const insertZ = ["spontaneously", "melted into a puddle on the sidewalk", "turne
 randomize.addEventListener('click', result);
 
 function result() {
-    if (customName.value !== '') {
+    let newStory = storyText;
+    xItem = randomValueFromArray(insertX);
+    yItem = randomValueFromArray(insertY);
+    zItem = randomValueFromArray(insertZ);
+    newStory = newStory.replace(':insertX:', xItem);
+    newStory = newStory.replace(':insertY:', yItem);
+    newStory = newStory.replace(':insertY:', yItem);
+    newStory = newStory.replace(':insertZ:', zItem);
 
+    if (customName.value !== '') {
+        newStory = newStory.replace('Bob', name);
     }
     if (document.getElementById("uk").checked) {
         const weight = Math.round(300);
